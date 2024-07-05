@@ -218,3 +218,8 @@ a:hover {
     flex-direction: column;
   }
 }
+@media (max-width: 768px) {
+  .time-group-2 {
+    display: none;
+  }
+}

@@ -69,20 +69,25 @@
               />
             </svg>
             <div class="time-day">
-              <h2 id="clock" class="time"></h2>
-              <h3 id="dayOfWeek"></h3>
+              <h2 data-testid="currentTimeUTC" id="clock" class="time"></h2>
+              <h3 data-testid="currentDay" id="dayOfWeek"></h3>
             </div>
           </div>
           <div></div>
           <div class="introduction-group">
             <img
+              data-testid="slackProfilePicture"
               src="/3-column-preview-card-component-main/images/Group 891.png"
               alt=""
             />
             <div class="names">
               <p class="hello">Hello I'm</p>
-              <h1 class="name-1" data-testid="slackDisplayName">PETER</h1>
-              <h1 class="name-2">AGBOOLA</h1>
+              <h1 class="name-1" data-testid="slackDisplayName">
+                PETER <br />AGBOOLA
+              </h1>
+              <h3 class="hello" data-testid="slackEmail">
+                pdagboola@gmail.com
+              </h3>
             </div>
           </div>
           <svg
@@ -377,10 +382,22 @@
           </div>
           <div class="footer-link">
             <ul>
-              <li><a href="https://hng.tech/learn">hng.learn</a></li>
-              <li><a href="https://keyword.dog/">keyword.dog</a></li>
               <li>
-                <a href="https://scrapeanyweb.site/">scrapeanyweb.site</a>
+                <a data-testid="hngLink" href="https://hng.tech/learn"
+                  >hng.learn</a
+                >
+              </li>
+              <li>
+                <a data-testid="keywordLink" href="https://keyword.dog/"
+                  >keyword.dog</a
+                >
+              </li>
+              <li>
+                <a
+                  data-testid="scrapeanywebLink"
+                  href="https://scrapeanyweb.site/"
+                  >scrapeanyweb.site</a
+                >
               </li>
             </ul>
           </div>
